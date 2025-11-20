@@ -1021,3 +1021,595 @@ header .container {
     margin-bottom: 5px;
     color: #e0e0e0;
 }
+/* Орден Джедаев */
+.order-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.order-section {
+    background: rgba(20, 25, 50, 0.6);
+    border: 1px solid #2a4a7a;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    scroll-margin-top: 20px;
+}
+
+.order-section h2 {
+    color: #4bd5ee;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a4a7a;
+}
+
+.order-intro {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.order-highlight {
+    background: rgba(75, 213, 238, 0.1);
+    border: 1px solid #4bd5ee;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Иерархия джедаев */
+.hierarchy-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hierarchy-card {
+    background: rgba(30, 35, 70, 0.6);
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #3a5a8a;
+    position: relative;
+}
+
+.hierarchy-card.grand-master {
+    border-left: 5px solid #ffd700;
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.hierarchy-card.master {
+    border-left: 5px solid #4bd5ee;
+    background: rgba(75, 213, 238, 0.05);
+}
+
+.hierarchy-card.knight {
+    border-left: 5px solid #28a745;
+    background: rgba(40, 167, 69, 0.05);
+}
+
+.hierarchy-card.padawan {
+    border-left: 5px solid #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.hierarchy-card.youngling {
+    border-left: 5px solid #6f42c1;
+    background: rgba(111, 66, 193, 0.05);
+}
+
+.hierarchy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hierarchy-header h3 {
+    color: #4bd5ee;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.hierarchy-badge {
+    background: rgba(75, 213, 238, 0.2);
+    color: #4bd5ee;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #4bd5ee;
+}
+
+.hierarchy-details {
+    background: rgba(40, 45, 80, 0.4);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.hierarchy-details h4 {
+    color: #4bd5ee;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.hierarchy-details ul {
+    margin-left: 20px;
+}
+
+.hierarchy-details li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.hierarchy-note {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.hierarchy-note strong {
+    color: #ffc107;
+}
+
+/* Звания джедаев */
+.jedi-ranks {
+    margin: 20px 0;
+}
+
+.jedi-rank {
+    border-left: 4px solid #6f42c1 !important;
+    background: rgba(111, 66, 193, 0.1) !important;
+}
+
+/* Полномочия джедаев */
+.powers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.power-card {
+    display: flex;
+    gap: 20px;
+    background: rgba(30, 35, 70, 0.6);
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #3a5a8a;
+    align-items: flex-start;
+}
+
+.power-card.important {
+    border-left: 5px solid #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.power-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.power-content {
+    flex: 1;
+}
+
+.power-content h3 {
+    color: #4bd5ee;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.power-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.power-content ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.power-content li {
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.power-procedure {
+    background: rgba(40, 45, 80, 0.4);
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.power-procedure h4 {
+    color: #4bd5ee;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.power-procedure ol {
+    margin-left: 20px;
+}
+
+.power-procedure li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.important-notes {
+    margin-top: 30px;
+}
+
+.note-box.important {
+    border-color: #ffc107;
+    background: rgba(255, 193, 7, 0.1);
+}
+
+.note-box.important strong {
+    color: #ffc107;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .power-card {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .hierarchy-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hierarchy-badge {
+        align-self: flex-start;
+    }
+}
+
+/* Высшее Командование */
+.command-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.command-section {
+    background: rgba(20, 25, 50, 0.6);
+    border: 1px solid #2a4a7a;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    scroll-margin-top: 20px;
+}
+
+.command-section h2 {
+    color: #4bd5ee;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a4a7a;
+}
+
+.command-intro {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.command-highlight {
+    background: rgba(75, 213, 238, 0.1);
+    border: 1px solid #4bd5ee;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.documents-info {
+    margin-top: 25px;
+}
+
+.documents-info h3 {
+    color: #4bd5ee;
+    margin-bottom: 15px;
+}
+
+.document-format {
+    background: rgba(30, 35, 70, 0.8);
+    border: 1px solid #3a5a8a;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: monospace;
+    color: #4bd5ee;
+    font-size: 1.1rem;
+}
+
+/* Система званий ВК */
+.command-ranks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rank-card {
+    background: rgba(30, 35, 70, 0.6);
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #3a5a8a;
+    position: relative;
+}
+
+.rank-card.gm {
+    border-left: 5px solid #4bd5ee;
+    background: rgba(75, 213, 238, 0.05);
+}
+
+.rank-card.ga {
+    border-left: 5px solid #28a745;
+    background: rgba(40, 167, 69, 0.05);
+}
+
+.rank-card.mcoa {
+    border-left: 5px solid #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.rank-card.moff {
+    border-left: 5px solid #dc3545;
+    background: rgba(220, 53, 69, 0.05);
+}
+
+.rank-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rank-header h3 {
+    color: #4bd5ee;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.rank-level {
+    background: rgba(75, 213, 238, 0.2);
+    color: #4bd5ee;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #4bd5ee;
+}
+
+.rank-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.rank-details {
+    background: rgba(40, 45, 80, 0.4);
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.rank-exception {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.rank-exception strong {
+    color: #ffc107;
+}
+
+/* Полномочия и обязанности */
+.powers-obligations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .powers-obligations {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.powers-section, .obligations-section {
+    background: rgba(30, 35, 70, 0.4);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.powers-section h3, .obligations-section h3 {
+    color: #4bd5ee;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.powers-list, .obligations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.power-item, .obligation-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 12px;
+    background: rgba(40, 45, 80, 0.6);
+    border-radius: 6px;
+    border-left: 3px solid #4bd5ee;
+}
+
+.power-item.important, .obligation-item.important {
+    border-left-color: #ffc107;
+    background: rgba(255, 193, 7, 0.1);
+}
+
+.power-icon, .obligation-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.power-text, .obligation-text {
+    flex: 1;
+    line-height: 1.5;
+}
+
+/* Управленческий состав */
+.management-info {
+    margin-top: 20px;
+}
+
+.management-definition {
+    background: rgba(75, 213, 238, 0.1);
+    border: 1px solid #4bd5ee;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.management-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+@media (min-width: 768px) {
+    .management-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.powers-list.detailed, .obligations-list.detailed {
+    gap: 15px;
+}
+
+/* Примечания */
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-item {
+    display: flex;
+    gap: 15px;
+    background: rgba(30, 35, 70, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #3a5a8a;
+    align-items: flex-start;
+}
+
+.note-item.important {
+    border-left: 5px solid #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.note-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.note-content {
+    flex: 1;
+}
+
+.note-content h4 {
+    color: #4bd5ee;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.note-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.note-exception {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.note-exception strong {
+    color: #ffc107;
+}
+
+.ranks-equivalence {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.rank-equivalent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(40, 45, 80, 0.6);
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.jedi-rank {
+    color: #6f42c1;
+    font-weight: bold;
+    flex: 1;
+}
+
+.equivalent {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.command-rank {
+    color: #4bd5ee;
+    font-weight: bold;
+    flex: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .rank-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rank-level {
+        align-self: flex-start;
+    }
+    
+    .power-item, .obligation-item, .note-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .rank-equivalent {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}

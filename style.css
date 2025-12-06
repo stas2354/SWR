@@ -2351,3 +2351,35 @@ header .container {
 .hierarchy-level:nth-child(even) {
     animation-delay: 0.2s;
 }
+
+/* Стили для новых карточек */
+.military-power-card.council {
+    border-left: 4px solid #8B4513; /* Коричневый для совета */
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(139, 69, 19, 0.05));
+}
+
+.military-power-card.grand-master {
+    border-left: 4px solid #FFD700; /* Золотой для гранд-мастера */
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+}
+
+.military-power-card.independent {
+    border-left: 4px solid #808080; /* Серый для независимых */
+    background: linear-gradient(135deg, rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.05));
+}
+
+.military-power-card.high-general {
+    border-left: 4px solid #C41E3A; /* Багровый для высшего генерала */
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.05));
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .military-powers-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .military-power-card {
+        margin-bottom: 1rem;
+    }
+}

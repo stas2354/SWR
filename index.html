@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Империя - Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-crown"></i>
+                    <span>ИМПЕРИЯ</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Главная страница</a>
+                    <a href="ustav.html" class="nav-link">Устав Империи</a>
+                    <a href="pravila.html" class="nav-link">Правила Проекта</a>
+                    <a href="ierarhiya.html" class="nav-link">Иерархия проекта</a>
+                </nav>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Поиск по странице..." autocomplete="off">
+                        <button class="search-clear" id="search-clear" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Баннер -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Добро пожаловать в Империю</h1>
+                    <p class="hero-subtitle">RP сервер на базе Garr mod</p>
+                    <div class="server-info">
+                        <div class="server-ip">
+                            <i class="fas fa-server"></i>
+                            <span>IP сервера: <span id="server-ip">loading...</span></span>
+                            <button class="copy-btn" onclick="copyIP()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История проекта -->
+        <section class="history-section">
+            <div class="container">
+                <h2 class="section-title">История проекта</h2>
+                <div class="history-content">
+                    <div class="history-card">
+                        <div class="history-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Начало пути</h3>
+                        <p>Империя была основана как уникальный RP-проект, объединяющий игроков в единое сообщество. Наш сервер создан на базе Garr mod, что позволяет реализовать глубокую ролевую игру с множеством возможностей.</p>
+                    </div>
+                    <div class="history-card">
+                        <div class="history-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Развитие сообщества</h3>
+                        <p>С течением времени наше сообщество выросло и стало одним из самых активных RP-серверов. Мы постоянно развиваемся, добавляем новые механики и улучшаем игровой опыт для всех участников.</p>
+                    </div>
+                    <div class="history-card">
+                        <div class="history-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Настоящее время</h3>
+                        <p>Сегодня Империя - это не просто сервер, а целый мир с богатой историей, устоявшимися традициями и активным сообществом. Мы гордимся каждым игроком и стремимся создать лучший RP-опыт.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подключение к серверу -->
+        <section class="connection-section">
+            <div class="container">
+                <h2 class="section-title">Подключение к серверу</h2>
+                <div class="connection-box">
+                    <div class="connection-info">
+                        <h3><i class="fas fa-plug"></i> Быстрое подключение</h3>
+                        <p>Для подключения к серверу используйте IP адрес ниже. Скоро будет доступно подключение через Garr mod.</p>
+                        <div class="ip-display">
+                            <input type="text" id="server-ip-input" value="loading..." readonly>
+                            <button class="btn-primary" onclick="copyIP()">
+                                <i class="fas fa-copy"></i> Копировать IP
+                            </button>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span id="server-status">Проверка статуса...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Империя. Все права защищены.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="social-link" title="VKontakte">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

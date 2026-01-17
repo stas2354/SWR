@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иерархия проекта - Империя</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-crown"></i>
+                    <span>ИМПЕРИЯ</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная страница</a>
+                    <a href="ustav.html" class="nav-link">Устав Империи</a>
+                    <a href="pravila.html" class="nav-link">Правила Проекта</a>
+                    <a href="ierarhiya.html" class="nav-link active">Иерархия проекта</a>
+                </nav>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Поиск по странице..." autocomplete="off">
+                        <button class="search-clear" id="search-clear" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Иерархия проекта</h1>
+                <p class="page-subtitle">Структура управления сервером Империя</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="hierarchy-tree">
+                    <!-- Владелец -->
+                    <div class="hierarchy-node owner-node">
+                        <div class="node-card owner-card">
+                            <div class="node-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Владелец сервера</h3>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка вниз -->
+                    <div class="hierarchy-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <!-- Высшая Администрация -->
+                    <div class="hierarchy-level top-admin">
+                        <h2 class="level-title">Высшая Администрация</h2>
+                        <div class="level-nodes">
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <h3>Проект-Менеджер</h3>
+                                </div>
+                            </div>
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <h3>Гл. Администратор</h3>
+                                </div>
+                            </div>
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <h3>Tex. Администратор</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка вниз -->
+                    <div class="hierarchy-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <!-- Старшая Администрация -->
+                    <div class="hierarchy-level senior-admin">
+                        <h2 class="level-title">Старшая Администрация</h2>
+                        <div class="level-nodes">
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h3>Гл. Ивентолог</h3>
+                                </div>
+                            </div>
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <h3>Куратор-проекта</h3>
+                                </div>
+                            </div>
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-users-cog"></i>
+                                    </div>
+                                    <h3>Куратор по персоналу</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка вниз -->
+                    <div class="hierarchy-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <!-- Средняя Администрация -->
+                    <div class="hierarchy-level middle-admin">
+                        <h2 class="level-title">Средняя Администрация</h2>
+                        <div class="level-nodes">
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <h3>Помощник Гл. Администратора</h3>
+                                </div>
+                            </div>
+                            <div class="hierarchy-node">
+                                <div class="node-card">
+                                    <div class="node-icon">
+                                        <i class="fas fa-theater-masks"></i>
+                                    </div>
+                                    <h3>Куратор RP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Империя. Все права защищены.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="social-link" title="VKontakte">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
